@@ -23,6 +23,8 @@
 		43AC864D2A1500C1005139D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43AC864F2A1500C1005139D2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		43AC86522A1500C1005139D2 /* NewIcloudTodo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewIcloudTodo.xcdatamodel; sourceTree = "<group>"; };
+		43AC86592A15014B005139D2 /* NewIcloudTodo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewIcloudTodo.entitlements; sourceTree = "<group>"; };
+		43AC865A2A150206005139D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,8 @@
 		43AC86452A1500C0005139D2 /* NewIcloudTodo */ = {
 			isa = PBXGroup;
 			children = (
+				43AC865A2A150206005139D2 /* Info.plist */,
+				43AC86592A15014B005139D2 /* NewIcloudTodo.entitlements */,
 				43AC86462A1500C0005139D2 /* NewIcloudTodoApp.swift */,
 				43AC86482A1500C0005139D2 /* ContentView.swift */,
 				43AC864A2A1500C1005139D2 /* Assets.xcassets */,
@@ -272,12 +276,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NewIcloudTodo/NewIcloudTodo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NewIcloudTodo/Preview Content\"";
 				DEVELOPMENT_TEAM = LW3THBZ2Y7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NewIcloudTodo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,12 +307,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NewIcloudTodo/NewIcloudTodo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NewIcloudTodo/Preview Content\"";
 				DEVELOPMENT_TEAM = LW3THBZ2Y7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NewIcloudTodo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
