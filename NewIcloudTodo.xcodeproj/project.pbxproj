@@ -13,6 +13,7 @@
 		43AC864E2A1500C1005139D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43AC864D2A1500C1005139D2 /* Preview Assets.xcassets */; };
 		43AC86502A1500C1005139D2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC864F2A1500C1005139D2 /* Persistence.swift */; };
 		43AC86532A1500C1005139D2 /* NewIcloudTodo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43AC86512A1500C1005139D2 /* NewIcloudTodo.xcdatamodeld */; };
+		43AC865C2A1570FA005139D2 /* UserSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC865B2A1570FA005139D2 /* UserSettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		43AC86522A1500C1005139D2 /* NewIcloudTodo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewIcloudTodo.xcdatamodel; sourceTree = "<group>"; };
 		43AC86592A15014B005139D2 /* NewIcloudTodo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewIcloudTodo.entitlements; sourceTree = "<group>"; };
 		43AC865A2A150206005139D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		43AC865B2A1570FA005139D2 /* UserSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				43AC86592A15014B005139D2 /* NewIcloudTodo.entitlements */,
 				43AC86462A1500C0005139D2 /* NewIcloudTodoApp.swift */,
 				43AC86482A1500C0005139D2 /* ContentView.swift */,
+				43AC865B2A1570FA005139D2 /* UserSettingsView.swift */,
 				43AC864A2A1500C1005139D2 /* Assets.xcassets */,
 				43AC864F2A1500C1005139D2 /* Persistence.swift */,
 				43AC86512A1500C1005139D2 /* NewIcloudTodo.xcdatamodeld */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43AC865C2A1570FA005139D2 /* UserSettingsView.swift in Sources */,
 				43AC86502A1500C1005139D2 /* Persistence.swift in Sources */,
 				43AC86492A1500C0005139D2 /* ContentView.swift in Sources */,
 				43AC86532A1500C1005139D2 /* NewIcloudTodo.xcdatamodeld in Sources */,
