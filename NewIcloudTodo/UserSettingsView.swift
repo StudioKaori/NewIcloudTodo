@@ -8,13 +8,26 @@
 import SwiftUI
 
 struct UserSettingsView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  
+  @EnvironmentObject var homeVM: HomeViewModel
+  @State private var isIcloudSyncOnButtonStatus: Bool = false
+  
+  var body: some View {
+    HStack {
+      Toggle("iCloud Sync", isOn: $isIcloudSyncOnButtonStatus)
     }
+    .padding()
+    .onChange(of: self.isIcloudSyncOnButtonStatus) { _ in
+      homeVM.isIcloudSyncOn = self.isIcloudSyncOnButtonStatus
+    }
+    .onAppear {
+      self.isIcloudSyncOnButtonStatus = homeVM.isIcloudSyncOn
+    }
+  }
 }
 
 struct UserSettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserSettingsView()
-    }
+  static var previews: some View {
+    UserSettingsView()
+  }
 }
