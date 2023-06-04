@@ -34,6 +34,14 @@ struct PersistenceController {
     
     // icloud step 1
     container = NSPersistentCloudKitContainer(name: "NewIcloudTodo")
+    
+    // icloud step 2
+    //automatically allow silent notification coming in
+    container.viewContext.automaticallyMergesChangesFromParent = true
+    
+    // icloud step 3, set policy
+    container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+    
     if inMemory {
       container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
     }
@@ -42,12 +50,5 @@ struct PersistenceController {
         fatalError("Unresolved error \(error), \(error.userInfo)")
       }
     })
-    
-    // icloud step 2
-    //automatically allow silent notification coming in
-    container.viewContext.automaticallyMergesChangesFromParent = true
-    
-    // icloud step 3, set policy
-    container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
   }
 }
